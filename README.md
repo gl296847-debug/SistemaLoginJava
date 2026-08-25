@@ -1,22 +1,22 @@
-# SistemaLoginJava 🔐
+# SistemaLoginJava
 
 Sistema de login desenvolvido em Java utilizando Java Swing e MySQL.
 
-## 📌 Sobre o projeto
+## Sobre o projeto
 
-Este projeto foi desenvolvido para praticar conceitos de desenvolvimento Java, conexão com banco de dados e criação de uma interface gráfica.
+Este projeto foi desenvolvido para praticar conceitos de desenvolvimento Java, conexao com banco de dados e criacao de uma interface grafica.
 
 O sistema permite:
 
-- Cadastro de usuários
+- Cadastro de usuarios
 - Login com e-mail e senha
-- Validação dos campos
+- Validacao dos campos
 - Armazenamento de senha utilizando hash SHA-256
 - Tela principal personalizada
 - Logout
-- Conexão com banco de dados MySQL
+- Conexao com banco de dados MySQL
 
-## 🛠️ Tecnologias utilizadas
+## Tecnologias utilizadas
 
 - Java
 - Java Swing
@@ -26,36 +26,36 @@ O sistema permite:
 - Git
 - GitHub
 
-## 📂 Estrutura do projeto
+## Estrutura do projeto
 
-O projeto está organizado nos seguintes pacotes:
+O projeto esta organizado nos seguintes pacotes:
 
-- **connection** — conexão com o banco de dados
-- **dao** — acesso e operações com o banco de dados
-- **model** — modelo dos usuários
-- **util** — funções auxiliares, como o hash da senha
-- **view** — telas do sistema
+- **connection** - conexao com o banco de dados
+- **dao** - acesso e operacoes com o banco de dados
+- **model** - modelo dos usuarios
+- **util** - funcoes auxiliares, como o hash da senha
+- **view** - telas do sistema
 
-## 🔐 Segurança
+## Seguranca
 
-As senhas não são armazenadas diretamente no banco de dados.
+As senhas nao sao armazenadas diretamente no banco de dados.
 
 Antes de serem salvas, elas passam por um processo de hash utilizando SHA-256.
 
-A senha de conexão com o banco de dados é obtida através da variável de ambiente `MYSQL_SENHA`, evitando deixar credenciais diretamente no código.
+A senha de conexao com o banco de dados e obtida atraves da variavel de ambiente `MYSQL_SENHA`, evitando deixar credenciais diretamente no codigo.
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
 ### Cadastro
 
-O usuário informa:
+O usuario informa:
 
 - Nome
 - E-mail
 - Senha
-- Confirmação da senha
+- Confirmacao da senha
 
-O sistema verifica se os campos foram preenchidos e se as senhas são iguais antes de realizar o cadastro.
+O sistema verifica se os campos foram preenchidos e se as senhas sao iguais antes de realizar o cadastro.
 
 ### Login
 
@@ -63,21 +63,21 @@ O sistema verifica o e-mail e a senha no banco de dados.
 
 A senha digitada passa pelo mesmo processo de hash utilizado no cadastro.
 
-Caso os dados estejam corretos, o usuário é direcionado para a tela principal.
+Caso os dados estejam corretos, o usuario e direcionado para a tela principal.
 
 ### Tela principal
 
-Após o login, o sistema exibe uma mensagem personalizada:
+Apos o login, o sistema exibe uma mensagem personalizada:
 
-> Bem-vindo, usuário!
+> Bem-vindo, usuario!
 
-Também existe um botão **Sair**, que retorna para a tela de login.
+Tambem existe um botao **Sair**, que retorna para a tela de login.
 
-## 🗄️ Banco de dados
+## Banco de dados
 
 O projeto utiliza um banco de dados MySQL chamado `login_db`.
 
-A tabela utilizada pelo sistema é `usuarios`.
+A tabela utilizada pelo sistema e `usuarios`.
 
 Campos:
 
@@ -86,33 +86,33 @@ Campos:
 - email
 - senha
 
-## 🎯 Objetivo
+## Objetivo
 
 Projeto desenvolvido para praticar:
 
 - Java
-- Programação Orientada a Objetos
+- Programacao Orientada a Objetos
 - Java Swing
 - JDBC
 - MySQL
-- Conexão com banco de dados
+- Conexao com banco de dados
 - Hash de senhas
-- Organização de projetos
+- Organizacao de projetos
 - Git e GitHub
 
-## 📚 Aprendizado
+## Aprendizado
 
 Durante o desenvolvimento deste projeto foram praticados conceitos como:
 
-- Criação de interfaces gráficas
-- Eventos de botões
-- Navegação entre telas
-- Cadastro e autenticação de usuários
-- Comunicação entre Java e MySQL
-- Uso do padrão DAO
-- Separação entre model, view, DAO e conexão
-- Proteção de credenciais
-- Controle de versão com Git
+- Criacao de interfaces graficas
+- Eventos de botoes
+- Navegacao entre telas
+- Cadastro e autenticacao de usuarios
+- Comunicacao entre Java e MySQL
+- Uso do padrao DAO
+- Separacao entre model, view, DAO e conexao
+- Protecao de credenciais
+- Controle de versao com Git
 
 ---
 
